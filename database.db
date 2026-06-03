@@ -1,0 +1,10 @@
+CREATE TABLE patients (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    fullname TEXT,
+    dob TEXT,
+    email TEXT,
+    glucose REAL,
+    haemoglobin REAL,
+    cholesterol REAL,
+    remarks TEXT
+);
