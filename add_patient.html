@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Patient</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Add Patient</h1>
+
+    <form method="POST">
+
+        <input type="text"
+               name="fullname"
+               placeholder="Full Name"
+               required>
+
+        <input type="date"
+               name="dob"
+               required>
+
+        <input type="email"
+               name="email"
+               placeholder="Email Address"
+               required>
+
+        <input type="number"
+               step="0.01"
+               name="glucose"
+               placeholder="Glucose"
+               required>
+
+        <input type="number"
+               step="0.01"
+               name="haemoglobin"
+               placeholder="Haemoglobin"
+               required>
+
+        <input type="number"
+               step="0.01"
+               name="cholesterol"
+               placeholder="Cholesterol"
+               required>
+
+        <button type="submit">
+            Save Patient
+        </button>
+
+    </form>
+
+    <br>
+
+    <a href="/" class="btn btn-add">
+        Back to Home
+    </a>
+
+</div>
+
+</body>
+</html>
